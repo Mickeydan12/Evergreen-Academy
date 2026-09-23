@@ -60,4 +60,4 @@ app.get('/api/stats', (_, res) => {
   })
 })
 
-app.listen(5000, () => console.log('API running on http://localhost:5000'))
+app.listen(process.env.PORT || 5000, () => console.log('API running on http://localhost:5000'))
